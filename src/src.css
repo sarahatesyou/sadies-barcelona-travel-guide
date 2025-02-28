@@ -1,11 +1,16 @@
 body {
   font-family: "Poppins", serif;
-  background-color: #fcf2bd;
+  background-color: #fde976;
+  margin: 0 auto;
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.container h2 {
+  text-shadow: 2px 1px #706e6e85;
 }
 
 .img-responsive {
@@ -14,9 +19,19 @@ body {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 60px;
+}
+
+section.secondary {
+  background-color: #f8e786;
+  text-align: center;
+}
+
+section.secondary h2 {
+  color: black;
+  text-shadow: none;
 }
 
 main {
@@ -38,8 +53,12 @@ main h2 {
   grid-template-columns: 1fr 1fr;
 }
 
-.grid-3col {
+.grid-3col-1nar {
   grid-template-columns: 1fr 2fr 1fr;
+}
+
+.grid-3col-eq {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 header {
@@ -57,6 +76,7 @@ header h1 {
   font-weight: 700;
   line-height: 1.5;
   margin: 0;
+  text-shadow: 2px 1px #706e6e85;
 }
 
 header h2 {
@@ -84,6 +104,53 @@ header a {
   padding: 8px 35px;
   display: inline-block;
   margin-top: 30px;
+}
+
+.card {
+  background-color: white;
+  max-width: 350px;
+}
+
+.card-body {
+  padding: 10px 20px;
+}
+
+.card-footer {
+  padding: 20px;
+}
+.card h3 {
+  font-weight: 800;
+  color: #f0ce0d;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+.card h4 {
+  font-weight: 700;
+  color: #f0ce0d;
+  font-size: 17px;
+  line-height: 1;
+  margin: 0;
+  text-align: left;
+}
+
+.card p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+.btn {
+  display: block;
+  background-color: #f0ce0d;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
 }
 
 footer {
