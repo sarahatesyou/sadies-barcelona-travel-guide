@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", serif;
+  background-color: #fcf2bd;
 }
 
 .container {
@@ -7,13 +8,37 @@ body {
   margin: 0 auto;
 }
 
+.img-responsive {
+  max-width: 100%;
+  display: block;
+}
+
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 60px;
+}
+
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-size: 50px;
+  color: #f0ce0d;
+  font-weight: 600;
 }
 
 .grid {
   display: grid;
+  grid-gap: 30px;
+}
+
+.grid-2col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3col {
   grid-template-columns: 1fr 2fr 1fr;
 }
 
@@ -85,7 +110,6 @@ footer p {
   font-size: 15px;
   color: #000000;
   padding: 0;
-  margin-right: 15px;
 }
 
 footer ul {
@@ -125,5 +149,19 @@ footer a:hover {
   header a {
     margin-top: 15px;
     font-size: 14px;
+  }
+  .img-responsive {
+    width: 50%;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  footer {
+    background-size: cover;
   }
 }
